@@ -1,0 +1,22 @@
+FINAL INSTRUCTIONS FOR VS CODE
+==============================
+
+You had a "PathError" because your Node.js version is very new. I have fixed the code to support it.
+
+HERE ARE THE EXACT STEPS TO RUN IT:
+
+1. Stop any running servers (Click the trash icon in the VS Code terminal).
+2. Open the "server/server.js" file and make sure my recent fix is there.
+3. Open a NEW Terminal (`Ctrl + ~` or `Terminal -> New Terminal`).
+4. Type this EXACT command and hit Enter:
+
+   node server/server.js
+
+5. Wait for it to say:
+   "Server running on http://localhost:3001"
+
+6. Open that link in your browser.
+
+TROUBLESHOOTING:
+- If it says "Error: Cannot find module", run this command first:
+  npm install && cd server && npm install && cd ..
